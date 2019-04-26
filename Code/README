@@ -1,0 +1,25 @@
+============================================================================
+This package includes the Database (FA_*.DAT) and a code (FA_OPD.f90)
+that reads and uses the database.
+
+All the variables are specifically illustrated at the beginning of the code.
+============================================================================
+input.txt:
+includes: (1). Fractal Dimension
+          (2). Monomer Diameter
+          (3). Particle Size Type (Single-size/Size distribution)
+          (4). Particle Size Unit (Monomer number/Equivalent Volume Diameter)
+          (5). Monomer number/D_EFF; SIGMA for Lognormal Distribution
+          (6). Wavelength
+          (7). Refractive Index 
+
+output.txt:
+includes: (1). Extinction and absorption cross section
+          (2). Mass Extinction and absorption cross section
+          (3). Single Scattering Albedo
+          (4). Asymmetry Factor
+          (5). Phase Function P11
+
+============================================================================
+14 Mar, 2019
+============================================================================

@@ -1,0 +1,8 @@
+Input file for FA_OPD.f90
+  1.8            ! Fractal Dimension             (Range: 1.8 - 2.8)
+  0.03           ! Monomer Diameter D_MON        (in unit of micron; pi*D_MON/wavelength: 0.05 - 0.5)
+  2              ! Particle Size N_PSD           (Options: 1. Single-size; 2. Size Distribution)
+  2              ! Particle Size Unit            (Options: 1. Monomer Number; 2. Equivalent Volume Diameter)
+  0.12  1.5      ! Monomer Number (or D_EFF); SIGMA for Lognormal Distribution (N_PSD=1, read one variable; N_PSD=2, read two variables)
+  0.5            ! Wavelength                    (in unit of micron)
+  1.75  0.5      ! Refractive Index              (Range: RE: 1.05 - 2.0; IM: 0.0 - 1.0)
