@@ -241,8 +241,8 @@
          BSCA = YQ(2,5,1) * AREA_EFF
          BABS = YQ(3,5,1) * AREA_EFF
 
-         MEC  = BEXT / VOL_EFF / 1.8D0
-         MAC  = BABS / VOL_EFF / 1.8D0
+         MEC  = BEXT / VOL_EFF / DENSITY * 1.0D-12
+         MAC  = BABS / VOL_EFF / DENSITY * 1.0D-12
          BSSA = BSCA / BEXT
       
          NORM = 0.0D0
@@ -288,8 +288,8 @@
             BP(1:181) = BP(1:181)  + WEIGHT * AREA_EFF * YQ(2,4,N_N) * YQ(6:186,4,N_N)
           ENDDO
 
-          MEC   = BEXT / BVOL / 1.8D0
-          MAC   = BABS / BVOL / 1.8D0
+          MEC   = BEXT / BVOL / DENSITY * 1.0D-12
+          MAC   = BABS / BVOL / DENSITY * 1.0D-12
           BSSA  = BSCA / BEXT
           BASY  = BASY / BSCA
           BP(1:181) = BP(1:181) / BSCA
